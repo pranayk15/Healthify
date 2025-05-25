@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Input</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:wght@300&display=swap');
+
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f1ea;
+        }
+
+        .content {
+            padding-bottom: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #555;
+        }
+
+        .message-input-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .message-input-wrapper {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            width: 90vw;
+            height: 38px;
+            border-radius: 35px;
+            padding: 8px 15px;
+            background-color: #ffffff;
+            margin-bottom: 25px;
+            border-color: #2196F3;
+
+        }
+
+        .message-input-wrapper input[type="text"] {
+            border: none;
+            outline: none;
+            padding: 8px 10px;
+            font-size: 16px;
+            background-color: transparent;
+            text-indent: 0.65rem;
+        }
+
+        .message-input-wrapper .icon {
+            cursor: pointer;
+            color: #5f6368;
+            margin-left: 10px;
+            font-size: 20px;
+            padding: 5px;
+           
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .message-input-wrapper .icon:hover {
+            border-color: #2196F3;
+        
+        }
+
+        .message-input-wrapper:focus {
+            border-color: #2196F3;
+            border: 200;
+        }
+
+        .message-input-wrapper .send-icon {
+            color: #1a73e8;
+            font-size: 22px;
+        }
+
+        .clip {
+            height: 25px;
+        }
+        .logo{
+            position:relative;
+        }
+
+        .logo_img {
+            display: block;
+
+            margin-left: auto;
+            
+            margin-right: auto;
+
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+            position:absolute;
+            top:50%;
+            left:50%;
+            
+        }
+
+        @media (max-width: 768px) {
+            .message-input-wrapper {
+                padding: 6px 12px;
+            }
+
+            .message-input-wrapper input[type="text"] {
+                font-size: 15px;
+            }
+
+            .message-input-wrapper .icon {
+                font-size: 18px;
+            }
+
+            .message-input-wrapper .send-icon {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .message-input-container {
+                padding: 10px 15px;
+            }
+
+            .message-input-wrapper {
+                padding: 5px 10px;
+                border-radius: 20px;
+            }
+
+            .message-input-wrapper input[type="text"] {
+                font-size: 14px;
+            }
+
+            .message-input-wrapper .icon {
+                font-size: 16px;
+                margin-left: 8px;
+            }
+
+            .message-input-wrapper .send-icon {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width:95vw" class="nav">
+        <div class="logo">
+            <img style="height:220px;width:220px;margin-top: 10px;" id=" logo"
+                src="ChatGPT_Image_Apr_15__2025__09_02_15_PM-removebg-preview_1-removebg-preview.png">
+        </div>
+
+        <div class="options">
+            <img style="width:45px;height: 24px;margin-top: 28px;margin-left: 19px;" id="menu" src="menu (1).png">
+        </div>
+    </div>
+    <div class="content">
+    </div>
+
+    <div class="message-input-container">
+        <div class="message-input-wrapper">
+            <img class="clip" src="clip.png"> <input type="text" placeholder="Write message">
+        </div>
+    </div>
+</body>
+
+</html>

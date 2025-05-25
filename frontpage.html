@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:wght@300&display=swap');
+  </style>
+</head>
+<div style="width:95vw" class="nav">
+  <div class="logo">
+    <img style="height:220px;width:220px;margin-top: 10px;" id=" logo"
+      src="ChatGPT_Image_Apr_15__2025__09_02_15_PM-removebg-preview_1-removebg-preview.png">
+  </div>
+
+  <div class="options">
+    <img style="width:45px;height: 24px;margin-top: 28px;margin-left: 19px;" id="menu" src="menu (1).png">
+  </div>
+</div>
+
+<body id="body" class="bg-gray-100 flex items-center justify-center p-4">
+
+
+  <div class="max-w-md w-full flex flex-col items-center relative">
+
+
+    <div id="box" class="p-8 rounded-lg shadow-xl w-full">
+
+      <div class="text-center mb-8">
+        <div class="inline-block rounded-full shadow-lg">
+          <img src="Group_5-removebg-preview.png">
+        </div>
+      </div>
+
+      <form action="#" method="POST">
+        <div class="mb-5">
+          <label for="email" class="block text-gray-700 text-sm font-medium mb-2"></label>
+          <input type="email" id="email" name="email" placeholder="Email"
+            class="w-full px-4 py-3 border border-gray-300 rounded-pill focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out text-base"
+            required>
+        </div>
+
+        <div class="mb-6">
+          <label for="password" class="block text-gray-700 text-sm font-medium mb-2"></label>
+          <input type="password" id="email" name="password" placeholder="Password"
+            class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out text-base"
+            required>
+        </div>
+
+        <div class="flex justify-center items-center mb-6">
+          <a href="#" id="forgot" class="text-sm text-blue-600 hover:underline font-medium">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+
+    <button id="login" type="submit" form="loginForm"
+      class="w-full bg-blue-600 text-white py-3 rounded-md font-semibold text-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200 ease-in-out shadow-md mt-6">
+      <a href="secondpage.html">Login</a>
+    </button>
+
+    
+
+  </div>
+
+</body>
+
+</html>

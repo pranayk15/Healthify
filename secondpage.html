@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:wght@300&display=swap');
+    </style>
+</head>
+<div style="width:95vw" class="nav">
+    <div class="logo">
+        <img style="height:220px;width:220px;margin-top: 10px;" id=" logo"
+            src="ChatGPT_Image_Apr_15__2025__09_02_15_PM-removebg-preview_1-removebg-preview.png">
+    </div>
+
+    <div class="options">
+        <img style="width:45px;height: 24px;margin-top: 28px;margin-left: 19px;" id="menu" src="menu (1).png">
+    </div>
+</div>
+
+
+<body id="body" class="bg-gray-100 flex items-center justify-center p-4">
+
+    <div class="w-full flex flex-col items-center relative">
+
+        <div id="box1" class="p-8 rounded-lg shadow-xl w-[800px] border border-gray-200">
+
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-gray-900 mb-2">Patient Details</h1>
+            </div>
+
+            <form id="patientDetailsForm" action="#" method="POST">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 mb-6">
+                    <div id="inputs">
+                        <label for="name" class="w-1/3 text-gray-700 text-sm font-medium pr-2"></label>
+                        <input type="text" id="details" name="name" placeholder="Name"
+                            class="flex-1 px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out text-base"
+                            required>
+                    </div>
+
+                    <div id="inputs">
+                        <label for="age" class="w-1/3 text-gray-700 text-sm font-medium pr-2"></label>
+                        <input type="number" id="details" name="age" placeholder="Age"
+                            class="flex-1 px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out text-base"
+                            required>
+                    </div>
+
+                    <div id="inputs" >
+                        <label for="bloodGroup" class="w-1/3 text-gray-700 text-sm font-medium pr-2"></label>
+                        <input type="text" id="details" name="bloodGroup" placeholder="Blood Group"
+                            class="flex-1 px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out text-base">
+                    </div>
+
+                    <div id="inputs" >
+                        <label for="height" class="w-1/3 text-gray-700 text-sm font-medium pr-2"></label>
+                        <input type="text" id="details" name="height" placeholder="Height"
+                            class="flex-1 px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out text-base">
+                    </div>
+
+                    <div id="inputs" class=>
+                        <label for="weight" class="w-1/3 text-gray-700 text-sm font-medium pr-2"></label>
+                        <input type="text" id="details" name="weight" placeholder="Weight"
+                            class="flex-1 px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out text-base">
+                    </div>
+
+                    <div id="inputs" >
+                        <label for="disease" class="w-1/3 text-gray-700 text-sm font-medium pr-2"></label>
+                        <input type="text" id="details" name="disease" placeholder="Disease"
+                            class="flex-1 px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out text-base">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <button id="login" type="submit" form="patientDetailsForm"
+            class="w-[800px] bg-blue-600 text-white py-3 rounded-md font-semibold text-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200 ease-in-out shadow-md mt-6">
+            <a href="thirdpage.html">Submit</a>
+        </button>
+
+    </div>
+</body>
+
+</html>

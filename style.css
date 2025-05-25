@@ -1,0 +1,61 @@
+#forgot{
+    color:#929292
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    width:100vh;
+    margin:0px;
+}
+
+#body{
+    background-color: #f5f1ea;
+    flex-direction: column;
+}
+#box{
+    border:1px solid #6FB4D0AD;
+    width:520px;
+    border-radius: 25px;
+}
+
+#email{
+    border-radius: 60px;
+    font-weight: 550;
+    color:black;
+    text-indent: 0.4rem;
+    width:400px;
+    height:60px;
+    margin-left: 25px;
+}
+#box1{
+    height:400px;
+    width:920px;
+    border:1px solid #6FB4D0AD;
+}
+
+#login{
+    background-color:#70B3D0;
+    color:black;
+    font-weight: 600;
+    border-radius: 60px;
+    width:300px;
+    margin-top: 52px;
+}
+
+#details{
+    border-radius: 20px;
+    width:400px;
+    height:55px;
+    text-indent: 1rem;
+    color:black;
+    font-weight: 550;
+}
+#inputs-placeholder{
+    width:100px;
+    color:black;
+    z-index: 1;
+}
+#menu :hover{
+    cursor:pointer;
+}
